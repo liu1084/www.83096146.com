@@ -1,0 +1,51 @@
+.header-container nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.header-container nav a {
+	margin-bottom: 5px;
+	float: left;
+	width: percentage(1/4);
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: #343436;
+	background: #F8F8F8;
+	padding: 1em;
+	box-sizing: border-box;
+}
+.header-container nav a.active {
+	background: #343436;
+	color: #F8F8F8;
+}
+.header-container nav a:hover, .header-container nav a:visited {
+	color: #999999;
+}
+.header-container nav a:hover {
+	text-decoration: underline;
+}
+.footer-container,
+.header-container,
+.footer-container,
+.title {
+	color: #CE2C2C;
+}
+.main {
+	padding: 30px 10px;
+}
+.main article h1 {
+	font-size: 2em;
+}
+.main img {
+	width: 100%;
+	border: 1px solid #EEEEEE;
+}
+.footer-container footer {
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+}
+.ie7 .title {
+	padding-top: 20px;
+}

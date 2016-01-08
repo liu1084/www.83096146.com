@@ -1,0 +1,44 @@
+html {
+	color: #222222;
+	font-size: 16px;
+	line-height: 1.4;
+	font: 1rem/1.625rem Helvetica, Helvetica Neue, Arial;
+}
+::-moz-selection {
+	background: #B3D4FC;
+	text-shadow: none;
+}
+::selection {
+	background: #B3D4FC;
+	text-shadow: none;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #CCCCCC;
+	margin: 1em 0;
+	padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+textarea {
+	resize: vertical;
+}
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #CCCCCC;
+	color: #000000;
+	padding: 0.2em 0;
+}

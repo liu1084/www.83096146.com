@@ -1,0 +1,35 @@
+@mixin tab($width,$height,$spacing,$bg-color,$font-color,$font-size,$font-weight,$hover-color,$borderradius) {
+	margin: 0px;
+	list-style: none;
+	& li {
+		float: left;
+		display: table;
+		width: $width;
+		height: $height;
+		margin-right: $spacing;
+		background: $bg-color;
+		-webkit-border-top-left-radius: $borderradius;
+		-webkit-border-top-right-radius: $borderradius;
+		-moz-border-radius-topleft: $borderradius;
+		-moz-border-radius-topright: $borderradius;
+		border-top-left-radius: $borderradius;
+		border-top-right-radius: $borderradius;
+		&:last-child {
+			margin-right: 0px;
+		}
+		& a {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			width: 100%;
+			height: 100%;
+			color: $font-color;
+			font-size: $font-size;
+			font-weight: $font-weight;
+			text-decoration: none;
+		}
+		&:hover {
+			background: $hover-color;
+		}
+	}
+}

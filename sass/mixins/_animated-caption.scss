@@ -1,0 +1,49 @@
+@mixin animated-caption($font-color, $bg-color, $bg-opacity, $padding, $transition-speed) {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	& img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	& span.outer {
+		display: block;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: $padding;
+		color: $font-color;
+		position: absolute;
+		bottom: -100px;
+		-webkit-transition: bottom $transition-speed ease;
+		-moz-transition: bottom $transition-speed ease;
+		-o-transition: bottom $transition-speed ease;
+		-ms-transition: bottom $transition-speed ease;
+		transition: bottom $transition-speed ease;
+		& span.inner {
+			margin: 0px;
+			position: relative;
+		}
+		&:before {
+			content: " ";
+			display: block;
+			position: absolute;
+			z-index: 0;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background: $bg-color;
+			filter: alpha(opactiy=($bg-opacity * 100));
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$bg-opacity * 100})";
+			-moz-opacity: $bg-opacity;
+			-khtml-opacity: $bg-opacity;
+			opacity: $bg-opacity;
+		}
+	}
+	&:hover span.outer {
+		bottom: 0px;
+	}
+}
